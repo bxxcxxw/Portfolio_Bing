@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Main</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="main-page">
+    <nav class="top-icons" aria-label="Navegación principal">
+        <div class="top-icon-item">
+            <button type="button" class="top-icon top-icon-with-image" aria-label="Sobre mi">
+                <img src="assets/imagenes/iconos/carpeta.png" alt="" class="top-icon-image">
+            </button>
+            <span class="top-icon-label">Sobre mí</span>
+        </div>
+        <div class="top-icon-item">
+            <button type="button" class="top-icon top-icon-with-image" aria-label="Proyectos">
+                <img src="assets/imagenes/iconos/portatil.png" alt="" class="top-icon-image">
+            </button>
+            <span class="top-icon-label">Proyectos</span>
+        </div>
+        <!-- <div class="top-icon-item">
+            <button type="button" class="top-icon top-icon-with-image" aria-label="Curiosidades">
+                <img src="assets/imagenes/iconos/personita.png" alt="" class="top-icon-image">
+            </button>
+            <span class="top-icon-label">Curiosidades</span>
+        </div> -->
+        <div class="top-icon-item">
+            <button type="button" class="top-icon top-icon-with-image" aria-label="Contactos">
+                <img src="assets/imagenes/iconos/movil.png" alt="" class="top-icon-image">
+            </button>
+            <span class="top-icon-label">Contactos</span>
+        </div>
+    </nav>
+
+    <!-- <button type="button" class="mp3-block" aria-label="Reproductor MP3">
+        <img src="assets/imagenes/iconos/mp3.png" alt="" class="mp3-block-image">
+    </button> -->
+
+    <button type="button" class="language-toggle" id="language-toggle" aria-label="Cambiar a inglés">
+        <span class="language-option language-es is-active">ES</span>
+        <span class="language-separator" aria-hidden="true">/</span>
+        <span class="language-option language-en">EN</span>
+    </button>
+
+    <section class="about-window" id="about-window" role="dialog" aria-modal="false" aria-labelledby="about-window-title" hidden>
+        <header class="about-titlebar" id="about-titlebar">
+            <div class="about-titlebar-brand">
+                <span class="about-titlebar-orb" aria-hidden="true"></span>
+                <span id="about-window-title">:></span>
+            </div>
+            <div class="about-window-controls" aria-label="Controles de ventana">
+                <button type="button" class="window-control window-minimize" data-window-action="minimize" aria-label="Minimizar">−</button>
+                <button type="button" class="window-control window-maximize" data-window-action="maximize" aria-label="Maximizar">□</button>
+                <button type="button" class="window-control window-close" data-window-action="close" aria-label="Cerrar">×</button>
+            </div>
+        </header>
+
+        <div class="about-window-content">
+            <aside class="about-profile-panel">
+                <div class="profile-avatar-wrap">
+                    <span class="profile-sparkle profile-sparkle-one" aria-hidden="true">✦</span>
+                    <img src="assets/imagenes/perfil/bing.gif" alt="BINGCHENG WANG" class="profile-avatar">
+                    <span class="profile-sparkle profile-sparkle-two" aria-hidden="true">✦</span>
+                </div>
+                <h2>BINGCHENG WANG</h2>
+                <p class="profile-kicker" id="profile-kicker">PROGRAMADOR<br>DESARROLLADOR DE VIDEOJUEGOS</p>
+            </aside>
+
+            <div class="about-main-panel">
+                <div class="about-heading-row">
+                    <div>
+                        <h2>Sobre mí</h2>
+                    </div>
+                    <span class="window-date">2004 / ahora</span>
+                </div>
+                <div class="about-banner">
+                    <img src="assets/imagenes/fondos/blue.jpg" alt="Estrellitas">
+                    <span class="banner-shine" aria-hidden="true"></span>
+                </div>
+                <div class="about-tabs" role="tablist" aria-label="Información sobre Bingcheng">
+                    <button type="button" class="about-tab is-active" role="tab" aria-selected="true" aria-controls="tab-who" id="tab-button-who" data-tab="who">Sobre mí</button>
+                    <button type="button" class="about-tab" role="tab" aria-selected="false" aria-controls="tab-work" id="tab-button-work" data-tab="work">Qué hago</button>
+                    <button type="button" class="about-tab" role="tab" aria-selected="false" aria-controls="tab-education" id="tab-button-education" data-tab="education">Educación</button>
+                    <button type="button" class="about-tab" role="tab" aria-selected="false" aria-controls="tab-experience" id="tab-button-experience" data-tab="experience">Experiencias</button>
+                    <button type="button" class="about-tab" role="tab" aria-selected="false" aria-controls="tab-languages" id="tab-button-languages" data-tab="languages">Idiomas</button>
+                </div>
+                <div class="about-tab-panels">
+                    <section class="about-tab-panel is-active" id="tab-who" role="tabpanel" aria-labelledby="tab-button-who">
+                        <div class="about-intro">
+                            <p id="about-intro-1">¡Hola! Soy Bingcheng, me podeís llamar Bing. Soy estudiante de 4º de Desarrollo de Videojuegos en la UCM. Mi principal interés es la programación, especialmente el desarrollo de videojuegos y software, QA y automatización y la informática musical, aunque estoy dispuesto a desafiarme en diferentes áreas de la informática y aprender cosas nuevas.</p>
+                            <p id="about-intro-2">A lo largo de la carrera he trabajado con distintos lenguajes de programación, incluyendo C++, C# y Python, desarrollo de videojuegos y diferentes proyectos en equipo. Me considero una persona responsable, curiosa y con iniciativa, y disfruto enfrentándome a problemas y buscando la forma de resolverlos.</p>
+                            <p id="about-intro-3">Tengo muchísimas ganas de poner en práctica mis conocimientos, ganar experiencia y seguir aprendiendo junto a profesionales del sector.</p>
+                        </div>
+                    </section>
+                    <section class="about-tab-panel" id="tab-work" role="tabpanel" aria-labelledby="tab-button-work" hidden>
+                        <div class="tab-content-grid">
+                            <article id="work-item-computing">
+                                <img src="assets/imagenes/iconos/cesta.png" alt="Informática" class="tab-content-icon">
+                                <h3 id="work-title-computing">Informática</h3>
+                                <p id="work-text-computing">C++, Python, Estructura de datos, algoritmos, Git, QA</p>
+                            </article>
+                            <article id="work-item-games">
+                                <img src="assets/imagenes/iconos/juego.png" alt="Videojuegos" class="tab-content-icon">
+                                <h3 id="work-title-games">Videojuegos</h3>
+                                <p id="work-text-games">C#/C++, desarrollo en Unity y Godot, desarrollo de mecánicas, diseño de experiencias jugables</p>
+                            </article>
+                            <article id="work-item-art">
+                                <img src="assets/imagenes/iconos/disco.png" alt="Arte" class="tab-content-icon">
+                                <h3 id="work-title-art">Arte</h3>
+                                <p id="work-text-art">Compongo música de fondo y efectos de sonido (y, a veces, diseño UI) para nuestros proyectos</p>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="about-tab-panel" id="tab-education" role="tabpanel" aria-labelledby="tab-button-education" hidden>
+                        <div class="education-grid">
+                            <article class="education-block" id="education-block-degree">
+                                <span class="education-date" id="education-date-degree">2023 - en curso</span>
+                                <div>
+                                    <h3 id="education-degree-title">Grado de Desarrollo de Videojuegos</h3>
+                                    <p><strong id="education-degree-school">Universidad Complutense de Madrid (UCM)</strong></p>
+                                    <p><strong id="education-degree-gpa-label">Nota media:</strong> <span id="education-degree-gpa">8,5</span></p>
+                                </div>
+                            </article>
+                            <article class="education-block education-block-compact" id="education-block-bach">
+                                <span class="education-date" id="education-date-bach">2021 - 2023</span>
+                                <div>
+                                    <h3 id="education-bach-title">Bachillerato</h3>
+                                    <p><strong id="education-bach-school">Colegio Manuel Bartolomé Cossío</strong> · <strong id="education-bach-gpa-label">Nota media:</strong> <span id="education-bach-gpa">9,53</span></p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="about-tab-panel" id="tab-experience" role="tabpanel" aria-labelledby="tab-button-experience" hidden>
+                        <div class="about-intro">
+                            <p id="experience-tbd">TBD... :3</p>
+                        </div>
+                    </section>
+                    <section class="about-tab-panel" id="tab-languages" role="tabpanel" aria-labelledby="tab-button-languages" hidden>
+                        <article class="languages-card" aria-label="Idiomas">
+                            <div class="languages-card-heading">
+                                <div class="languages-globe">🌐</div>
+                                <div>
+                                    <h3 id="languages-title">Idiomas</h3>
+                                    <p id="languages-description">Mis habilidades lingüísticas</p>
+                                </div>
+                            </div>
+                            <div class="language-list">
+                                <div class="language-panel">
+                                    <span class="language-badge">ES</span>
+                                    <div class="language-copy">
+                                        <strong id="language-es-name">Español</strong>
+                                        <div class="language-progress"><span style="width: 100%"></span></div>
+                                    </div>
+                                    <div class="language-level" id="language-es-level">Nativo</div>
+                                </div>
+                                <div class="language-panel">
+                                    <span class="language-badge">CN</span>
+                                    <div class="language-copy">
+                                        <strong id="language-cn-name">Chino</strong>
+                                        <div class="language-progress"><span style="width: 100%"></span></div>
+                                    </div>
+                                    <div class="language-level" id="language-cn-level">Nativo</div>
+                                </div>
+                                <div class="language-panel">
+                                    <span class="language-badge">EN</span>
+                                    <div class="language-copy">
+                                        <strong id="language-en-name">Inglés</strong>
+                                        <div class="language-progress"><span style="width: 75%"></span></div>
+                                    </div>
+                                    <div class="language-level" id="language-en-level">B2</div>
+                                </div>
+                                <div class="language-panel">
+                                    <span class="language-badge">KR</span>
+                                    <div class="language-copy">
+                                        <strong id="language-ko-name">Coreano</strong>
+                                        <div class="language-progress"><span style="width: 30%"></span></div>
+                                    </div>
+                                    <div class="language-level" id="language-ko-level">Básico</div>
+                                </div>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="contacts-window" id="contacts-window" role="dialog" aria-label="Contactos" tabindex="-1" hidden>
+        <header class="contacts-titlebar" id="contacts-titlebar">
+            <div class="contacts-titlebar-brand">
+                <span class="contacts-titlebar-orb" aria-hidden="true"></span>
+                <span id="contacts-window-title">:3</span>
+            </div>
+            <div class="contacts-window-controls" aria-label="Controles de ventana">
+                <button type="button" class="window-control window-minimize" data-window-action="minimize" aria-label="Minimizar">−</button>
+                <button type="button" class="window-control window-maximize" data-window-action="maximize" aria-label="Maximizar">□</button>
+                <button type="button" class="window-control window-close" data-window-action="close" aria-label="Cerrar">×</button>
+            </div>
+        </header>
+        <div class="contacts-window-body">
+            <div class="contacts-phone-wrap">
+                <img src="assets/imagenes/contacto/movil_abierto.gif" alt="Móvil abierto con la pantalla de contactos" class="contacts-phone-image">
+                <div class="contacts-info" aria-label="Datos de contacto">
+                    <div class="contact-photos" aria-label="Contacto">
+                        <button type="button" class="contact-photo-link" data-copy="bingchengw730@gmail.com" aria-label="Copiar correo">
+                            <img src="assets/imagenes/contacto/mail.png" alt="Correo" class="contact-photo">
+                        </button>
+                        <button type="button" class="contact-photo-link" data-copy="+34 688019436" aria-label="Copiar teléfono">
+                            <img src="assets/imagenes/contacto/telefono.jpg" alt="Teléfono" class="contact-photo">
+                        </button>
+                        <a href="assets/documentos/cv-practicas-normal.pdf" class="contact-photo-link" target="_blank" rel="noopener noreferrer" aria-label="Ver CV">
+                            <img src="assets/imagenes/contacto/cv.png" alt="CV" class="contact-photo">
+                        </a>
+                        <a href="https://www.linkedin.com/in/bingcheng-wang-a944293a7" class="contact-photo-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <img src="assets/imagenes/contacto/linkedin.png" alt="LinkedIn" class="contact-photo">
+                        </a>
+                        <a href="https://github.com/bingoo30" class="contact-photo-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <img src="assets/imagenes/contacto/github.png" alt="GitHub" class="contact-photo">
+                        </a>
+                    </div>
+                </div>
+                <div class="copy-toast" id="copy-toast" role="status" aria-live="polite"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="projects-window" id="projects-window" role="dialog" aria-modal="false" aria-labelledby="projects-window-title" tabindex="-1" hidden>
+        <header class="projects-titlebar" id="projects-titlebar">
+            <div class="projects-titlebar-brand">
+                <span class="projects-titlebar-orb" aria-hidden="true"></span>
+                <span id="projects-window-title">:P</span>
+            </div>
+            <div class="projects-window-controls" aria-label="Controles de ventana">
+                <button type="button" class="window-control window-minimize" data-window-action="minimize" aria-label="Minimizar">−</button>
+                <button type="button" class="window-control window-maximize" data-window-action="maximize" aria-label="Maximizar">□</button>
+                <button type="button" class="window-control window-close" data-window-action="close" aria-label="Cerrar">×</button>
+            </div>
+        </header>
+        <div class="projects-filter-bar" role="group" aria-label="Filtrar proyectos por categoría">
+            <button type="button" class="projects-filter is-active" data-filter="todas" aria-pressed="true">Todas</button>
+            <button type="button" class="projects-filter" data-filter="juegos" aria-pressed="false">Juegos</button>
+            <button type="button" class="projects-filter" data-filter="programacion" aria-pressed="false">Programación</button>
+            <button type="button" class="projects-filter" data-filter="arte" aria-pressed="false">Arte</button>
+            <button type="button" class="projects-filter" data-filter="sonido" aria-pressed="false">Sonido</button>
+        </div>
+        <div class="projects-window-content">
+            <!-- Las tarjetas se generan desde script.js a partir de la lista de proyectos -->
+            <div class="projects-grid"></div>
+        </div>
+        <div class="projects-pagination" aria-label="Paginación de proyectos">
+            <button type="button" class="projects-page-btn projects-page-prev" aria-label="Página anterior">←</button>
+            <span class="projects-page-indicator" aria-live="polite">1 / 1</span>
+            <button type="button" class="projects-page-btn projects-page-next" aria-label="Página siguiente">→</button>
+        </div>
+    </section>
+
+    <!-- Ventana de detalle de un proyecto: se abre al clicar una tarjeta
+         y se cierra al salir de ella con el puntero. -->
+    <div class="projects-detail-window" id="projects-detail-window" role="dialog" aria-modal="false" aria-labelledby="projects-detail-title" tabindex="-1" hidden>
+        <header class="projects-detail-titlebar">
+            <div class="projects-detail-titlebar-brand">
+                <span class="projects-detail-titlebar-orb" aria-hidden="true"></span>
+                <span id="projects-detail-title">:D</span>
+            </div>
+            <div class="projects-detail-window-controls" aria-label="Controles de ventana">
+                <button type="button" class="window-control window-close" data-detail-action="close" aria-label="Cerrar">×</button>
+            </div>
+        </header>
+        <div class="projects-detail-body">
+            <div class="projects-detail-media">
+                <img id="projects-detail-image" class="projects-detail-image" src="" alt="" hidden>
+                <span id="projects-detail-cross" class="projects-detail-cross" aria-hidden="true">✕</span>
+            </div>
+            <div class="projects-detail-tags" id="projects-detail-tags"></div>
+            <p class="projects-detail-desc" id="projects-detail-desc"></p>
+            <div class="projects-detail-contrib" id="projects-detail-contrib"></div>
+            <a class="projects-detail-link" id="projects-detail-link" href="#" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
+        </div>
+    </div>
+
+    <div class="spin-cursor is-visible" id="spin-cursor" aria-hidden="true">
+        <div class="spin-cursor-arrow"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
