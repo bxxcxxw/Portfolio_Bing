@@ -175,8 +175,8 @@ const projectsWindowTitle = document.getElementById('projects-window-title');
 const aboutHeadingTitle = document.querySelector('.about-heading-row h2');
 const aboutTabsGroup = document.querySelector('.about-tabs');
 const nombresIdiomas = {
-    es: ['Sobre mí', 'Proyectos', 'Intereses', 'Contactos'],
-    en: ['About me', 'Projects', 'Interests', 'Contacts']
+    es: ['Sobre mí', 'Proyectos', 'Contactos'],
+    en: ['About me', 'Projects', 'Contacts']
 };
 const nombresTabsSobreMi = {
     es: ['Sobre mí', 'Qué hago', 'Educación', 'Experiencias', 'Idiomas'],
