@@ -675,7 +675,7 @@ const proyectos = [
             ]
         },
         imagen: 'assets/imagenes/portadas/hugo.png',
-        url: 'https://drive.google.com/file/d/11-jLl4xSZMU37_uQ6oFMXrbz2DY1cgC4/view?usp=sharing'
+        url: 'https://github.com/Picante-Medio/HUGO'
     },
     {
         nombre: { es: 'Zapascape', en: 'Zapascape' },
@@ -690,7 +690,7 @@ const proyectos = [
             en: 'Programming of mechanics, enemy state machine, menu and UI element design, menu interaction logic, and creation of sound effects and music.'
         },
         imagen: 'assets/imagenes/portadas/zapascape.png',
-        url: 'https://drive.google.com/file/d/1OPJq5PeUMsvve9B51etYILF4QXZk90Et/view?usp=sharing'
+        url: 'https://github.com/Picante-Medio/Zapascape'
     },
     {
         nombre: { es: 'Batalla de IAs', en: 'Battle of AIs' },
